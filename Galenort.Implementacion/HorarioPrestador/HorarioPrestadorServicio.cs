@@ -42,7 +42,7 @@ namespace Galenort.Implementacion.HorarioPrestador
             {
                 exp = exp.And(x => x.IdPrestador == profesionalId);
             }
-
+            
             if (establecimientoId != 0)
             {
                 exp = exp.And(x => x.Prestador.PrestadorEstablecimientos.Any(y => y.IdEstablecimiento == establecimientoId));
@@ -54,7 +54,7 @@ namespace Galenort.Implementacion.HorarioPrestador
             }
 
             var result = await _repositorio.GetByFilter(exp, x => x.OrderBy(y => y.Prestador.Apellido),
-                x => x.Include(y => y.Horario)
+                x => x.Include(y => y.Horario).Include(y=>y.Horario.DiaHorarios)
                     .Include(y => y.Prestador).Include(y => y.Prestador.PrestadorEspecialidades), true);
             return _mapper.Map<IEnumerable<HorarioPrestadorDto>>(result);
         }

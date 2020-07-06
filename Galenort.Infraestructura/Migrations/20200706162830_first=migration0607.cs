@@ -124,26 +124,12 @@ namespace Galenort.Infraestructura.Migrations
                         .Annotation("MySQL:AutoIncrement", true),
                     EstaEliminado = table.Column<short>(nullable: false),
                     RowVersion = table.Column<byte[]>(rowVersion: true, nullable: true),
-                    IdEstablecimiento = table.Column<long>(nullable: false),
-                    IdEspecialidad = table.Column<long>(nullable: false),
                     IdPrestador = table.Column<long>(nullable: false),
                     IdHorario = table.Column<long>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_HorarioPrestadores", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Especialidad_HorarioPrestadores",
-                        column: x => x.IdEspecialidad,
-                        principalTable: "Especialidades",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Establecimiento_HorarioPrestadores",
-                        column: x => x.IdEstablecimiento,
-                        principalTable: "Establecimientos",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Horario_HorarioPrestadores",
                         column: x => x.IdHorario,
