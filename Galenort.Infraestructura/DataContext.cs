@@ -13,11 +13,12 @@ namespace Galenort.Infraestructura
 {
     public class DataContext : DbContext
     {
+
         #region DbConfiguration
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL(ObtenerCadenaConexionSql, 
+            optionsBuilder.UseMySQL(ObtenerCadenaConexionSql,
                 prov => prov.CommandTimeout(60)).EnableSensitiveDataLogging();
             base.OnConfiguring(optionsBuilder);
         }
@@ -182,7 +183,6 @@ namespace Galenort.Infraestructura
         }
         #endregion
 
-
         #region DbSet
 
         public DbSet<Dia> Dias { get; set; }
@@ -196,5 +196,6 @@ namespace Galenort.Infraestructura
         public DbSet<Especialidad> Especialidades { get; set; }
 
         #endregion
+
     }
 }
