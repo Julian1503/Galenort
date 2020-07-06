@@ -21,16 +21,20 @@ namespace Galenor.API.Controllers
             _especialidadServicio = especialidadServicio;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [Route("ObtenerTodos")]
-        public IActionResult ObtenerTodos()
+        public async Task<IActionResult> ObtenerTodos()
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var result = _especialidadServicio.ObtenerTodos();
+            var result = await _especialidadServicio.ObtenerTodos();
 
             if (result == null)
             {

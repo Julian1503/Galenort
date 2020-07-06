@@ -14,12 +14,6 @@ namespace Galenort.Dominio.Metadata
             builder.Property(x => x.IdPrestador)
                 .IsRequired();
 
-            builder.Property(x => x.IdEspecialidad)
-                .IsRequired();
-
-            builder.Property(x => x.IdEstablecimiento)
-                .IsRequired();
-
             builder.Property(x => x.IdHorario)
                 .IsRequired();
 

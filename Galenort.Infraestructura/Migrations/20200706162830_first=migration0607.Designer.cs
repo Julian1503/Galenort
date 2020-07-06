@@ -168,7 +168,7 @@ namespace Galenort.Infraestructura.Migrations
                     b.Property<TimeSpan>("HoraFin")
                         .HasColumnType("Time");
 
-                    b.Property<TimeSpan>("HoraIncio")
+                    b.Property<TimeSpan>("HoraInicio")
                         .HasColumnType("Time");
 
                     b.Property<byte[]>("RowVersion")

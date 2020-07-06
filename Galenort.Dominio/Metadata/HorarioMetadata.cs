@@ -15,7 +15,7 @@ namespace Galenort.Dominio.Metadata
                 .HasColumnType("Time")
                 .IsRequired();
 
-            builder.Property(x => x.HoraIncio)
+            builder.Property(x => x.HoraInicio)
                 .HasColumnType("Time")
                 .IsRequired();
 

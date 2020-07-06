@@ -21,14 +21,14 @@ namespace Galenor.API.Controllers
         }
         [HttpGet]
         [Route("ObtenerTodos")]
-        public IActionResult ObtenerTodos()
+        public async Task<IActionResult> ObtenerTodos()
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var result = _establecimientoServicio.ObtenerTodos();
+            var result = await _establecimientoServicio.ObtenerTodos();
 
             if (result == null)
             {

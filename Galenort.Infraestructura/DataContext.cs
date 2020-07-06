@@ -72,24 +72,6 @@ namespace Galenort.Infraestructura
                 .HasForeignKey(x => x.IdPrestador)
                 .HasConstraintName("FK_Prestador_HorarioPrestadores");
 
-            modelBuilder.Entity<HorarioPrestador>()
-                .HasOne(x => x.Establecimiento)
-                .WithMany(x => x.HorarioPrestadores)
-                .HasForeignKey(x => x.IdEstablecimiento)
-                .HasConstraintName("FK_Establecimiento_HorarioPrestadores");
-
-            modelBuilder.Entity<HorarioPrestador>()
-                .HasOne(x => x.Especialidad)
-                .WithMany(x => x.HorarioPrestadores)
-                .HasForeignKey(x => x.IdEspecialidad)
-                .HasConstraintName("FK_Especialidad_HorarioPrestadores");
-
-            modelBuilder.Entity<Especialidad>()
-                .HasMany(x => x.HorarioPrestadores)
-                .WithOne(x => x.Especialidad)
-                .HasForeignKey(x => x.IdEspecialidad)
-                .HasConstraintName("FK_Especialidad_HorarioPrestadores");
-
             modelBuilder.Entity<Especialidad>()
                 .HasMany(x => x.PrestadorEspecialidades)
                 .WithOne(x => x.Especialidad)
@@ -143,12 +125,6 @@ namespace Galenort.Infraestructura
                 .WithOne(x => x.Establecimiento)
                 .HasForeignKey(x => x.IdEstablecimiento)
                 .HasConstraintName("FK_Establecimiento_PrestadorEstablecimientos");
-
-            modelBuilder.Entity<Establecimiento>()
-                .HasMany(x => x.HorarioPrestadores)
-                .WithOne(x => x.Establecimiento)
-                .HasForeignKey(x => x.IdEstablecimiento)
-                .HasConstraintName("FK_Establecimiento_HorarioPrestadores");
 
             #endregion
 

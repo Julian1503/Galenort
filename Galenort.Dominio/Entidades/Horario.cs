@@ -7,7 +7,7 @@ namespace Galenort.Dominio.Entidades
 {
     public class Horario : EntityBase
     {
-        public TimeSpan HoraIncio{ get; set; }
+        public TimeSpan HoraInicio{ get; set; }
         public TimeSpan HoraFin { get; set; }
 
        public virtual IEnumerable<DiaHorario> DiaHorarios { get; set; }

@@ -64,7 +64,7 @@ namespace Galenort.Infraestructura.Migrations
                         .Annotation("MySQL:AutoIncrement", true),
                     EstaEliminado = table.Column<short>(nullable: false),
                     RowVersion = table.Column<byte[]>(rowVersion: true, nullable: true),
-                    HoraIncio = table.Column<TimeSpan>(type: "Time", nullable: false),
+                    HoraInicio = table.Column<TimeSpan>(type: "Time", nullable: false),
                     HoraFin = table.Column<TimeSpan>(type: "Time", nullable: false)
                 },
                 constraints: table =>
