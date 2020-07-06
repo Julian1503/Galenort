@@ -29,7 +29,7 @@ namespace Galenort.Implementacion.HorarioPrestador
         public async Task<IEnumerable<HorarioPrestadorDto>> ObtenerTodos()
         {
             var result = await _repositorio.GetAll(x => x.OrderBy(y => y.Prestador.Apellido),
-                x => x.Include(y => y.Establecimiento).Include(y => y.Especialidad).Include(y => y.Horario)
+                x => x.Include(y => y.Horario)
                     .Include(y => y.Prestador),true);
             return _mapper.Map<IEnumerable<HorarioPrestadorDto>>(result);
         }
@@ -38,24 +38,24 @@ namespace Galenort.Implementacion.HorarioPrestador
         {
             Expression<Func<Dominio.Entidades.HorarioPrestador, bool>> exp = x => true;
 
-            if (establecimientoId != 0)
-            {
-                exp = exp.And(x=> x.IdEstablecimiento == establecimientoId);
-            }
-
             if (profesionalId != 0)
             {
                 exp = exp.And(x => x.IdPrestador == profesionalId);
             }
 
+            if (establecimientoId != 0)
+            {
+                exp = exp.And(x => x.Prestador.PrestadorEstablecimientos.Any(y => y.IdEstablecimiento == establecimientoId));
+            }
+
             if (especialidadId != 0)
             {
-                exp = exp.And(x => x.IdEspecialidad == especialidadId);
+                exp = exp.And(x => x.Prestador.PrestadorEspecialidades.Any(y=>y.IdEspecialidad == especialidadId));
             }
 
             var result = await _repositorio.GetByFilter(exp, x => x.OrderBy(y => y.Prestador.Apellido),
-                x => x.Include(y => y.Establecimiento).Include(y => y.Especialidad).Include(y => y.Horario)
-                    .Include(y => y.Prestador), true);
+                x => x.Include(y => y.Horario)
+                    .Include(y => y.Prestador).Include(y => y.Prestador.PrestadorEspecialidades), true);
             return _mapper.Map<IEnumerable<HorarioPrestadorDto>>(result);
         }
     }
