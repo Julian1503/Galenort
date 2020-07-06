@@ -9,9 +9,9 @@ namespace Galenort.Dominio
     {
         [Key]
         public long Id { get; set; }
+        [Required]
+        public Int16 EstaEliminado { get; set; }
         [Timestamp]
         public byte[] RowVersion { get; set; }
-        [Required]
-        public bool EstaEliminado { get; set; }
     }
 }

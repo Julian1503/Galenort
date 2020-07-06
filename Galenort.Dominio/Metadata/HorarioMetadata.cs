@@ -19,7 +19,7 @@ namespace Galenort.Dominio.Metadata
                 .HasColumnType("Time")
                 .IsRequired();
 
-            builder.HasQueryFilter(x => x.EstaEliminado == false);
+            builder.HasQueryFilter(x => x.EstaEliminado == 0);
         }
     }
 }

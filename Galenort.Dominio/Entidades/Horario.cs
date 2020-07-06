@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
-using Galenort.Constantes;
 
 namespace Galenort.Dominio.Entidades
 {

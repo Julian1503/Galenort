@@ -27,7 +27,7 @@ namespace Galenort.Dominio.Metadata
                 .HasMaxLength(150)
                 .IsRequired();
 
-            builder.HasQueryFilter(x => x.EstaEliminado == false);
+            builder.HasQueryFilter(x => x.EstaEliminado == 0);
         }
     }
 }

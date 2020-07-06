@@ -9,7 +9,7 @@ using Galenort.Dominio.Repositorio;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 
-namespace Galenort.Infraestructura.Repositorio
+namespace Galenort.Infraestructura.Repo
 {
     public class Repositorio<T> : IRepositorio<T> where T : EntityBase
     {

@@ -15,7 +15,7 @@ namespace Galenort.Dominio.Metadata
                 .HasMaxLength(100)
                 .IsRequired();
 
-            builder.HasQueryFilter(x => x.EstaEliminado == false);
+            builder.HasQueryFilter(x => x.EstaEliminado == 0);
 
             builder.HasData(Seed());
         }
@@ -27,44 +27,37 @@ namespace Galenort.Dominio.Metadata
                new Dia
                {
                    Id=1,
-                   Descripcion = "Lunes",
-                   EstaEliminado = false
+                   Descripcion = "Lunes"
                },
                new Dia
                {
-                   Id=1,
-                   Descripcion = "Martes",
-                   EstaEliminado = false
+                   Id=2,
+                   Descripcion = "Martes"
                },
                new Dia
                {
-                   Id=1,
-                   Descripcion = "Miercoles",
-                   EstaEliminado = false
+                   Id=3,
+                   Descripcion = "Miercoles"
                },
                new Dia
                {
-                   Id=1,
-                   Descripcion = "Jueves",
-                   EstaEliminado = false
+                   Id=4,
+                   Descripcion = "Jueves"
                },
                new Dia
                {
-                   Id=1,
-                   Descripcion = "Viernes",
-                   EstaEliminado = false
+                   Id=5,
+                   Descripcion = "Viernes"
                },
                new Dia
                {
-                   Id=1,
-                   Descripcion = "Sabado",
-                   EstaEliminado = false
+                   Id=6,
+                   Descripcion = "Sabado"
                },
                new Dia
                {
-                   Id=1,
-                   Descripcion = "Domingo",
-                   EstaEliminado = false
+                   Id=7,
+                   Descripcion = "Domingo"
                },
            };
         }

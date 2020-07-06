@@ -18,7 +18,7 @@ namespace Galenort.Dominio.Metadata
             builder.Property(x => x.IdDia)
                 .IsRequired();
 
-            builder.HasQueryFilter(x => x.EstaEliminado == false);
+            builder.HasQueryFilter(x => x.EstaEliminado == 0);
         }
     }
 }

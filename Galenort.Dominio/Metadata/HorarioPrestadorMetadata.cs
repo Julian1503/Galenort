@@ -23,7 +23,7 @@ namespace Galenort.Dominio.Metadata
             builder.Property(x => x.IdHorario)
                 .IsRequired();
 
-            builder.HasQueryFilter(x => x.EstaEliminado == false);
+            builder.HasQueryFilter(x => x.EstaEliminado == 0);
         }
     }
 }
