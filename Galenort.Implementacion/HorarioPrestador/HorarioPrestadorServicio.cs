@@ -28,9 +28,13 @@ namespace Galenort.Implementacion.HorarioPrestador
 
         public async Task<IEnumerable<HorarioPrestadorDto>> ObtenerTodos()
         {
-            var result = await _repositorio.GetAll(x => x.OrderBy(y => y.Prestador.Apellido),
-                x => x.Include(y => y.Horario)
-                    .Include(y => y.Prestador),true);
+            var result = await _repositorio.GetAll(null,
+                x => x.Include(y => y.PrestadorEstablecimiento.Establecimiento)
+                    .Include(y => y.PrestadorEstablecimiento.PrestadorEspecialidad.Especialidad)
+                    .Include(y=>y.PrestadorEstablecimiento.Establecimiento.Localidad)
+                    .Include(y => y.PrestadorEstablecimiento.PrestadorEspecialidad.Prestador)
+                    .Include(y=>y.DiaHorarios)
+                    .ThenInclude(y=>y.Dia),false);
             return _mapper.Map<IEnumerable<HorarioPrestadorDto>>(result);
         }
 
@@ -38,24 +42,28 @@ namespace Galenort.Implementacion.HorarioPrestador
         {
             Expression<Func<Dominio.Entidades.HorarioPrestador, bool>> exp = x => true;
 
-            if (profesionalId != 0)
-            {
-                exp = exp.And(x => x.IdPrestador == profesionalId);
-            }
-            
             if (establecimientoId != 0)
             {
-                exp = exp.And(x => x.Prestador.PrestadorEstablecimientos.Any(y => y.IdEstablecimiento == establecimientoId));
+                exp = exp.And(x=> x.PrestadorEstablecimiento.IdEstablecimiento == establecimientoId);
+            }
+
+            if (profesionalId != 0)
+            {
+                exp = exp.And(x => x.PrestadorEstablecimiento.PrestadorEspecialidad.IdPrestador == profesionalId);
             }
 
             if (especialidadId != 0)
             {
-                exp = exp.And(x => x.Prestador.PrestadorEspecialidades.Any(y=>y.IdEspecialidad == especialidadId));
+                exp = exp.And(x => x.PrestadorEstablecimiento.PrestadorEspecialidad.IdEspecialidad == especialidadId);
             }
 
-            var result = await _repositorio.GetByFilter(exp, x => x.OrderBy(y => y.Prestador.Apellido),
-                x => x.Include(y => y.Horario).Include(y=>y.Horario.DiaHorarios)
-                    .Include(y => y.Prestador).Include(y => y.Prestador.PrestadorEspecialidades), true);
+            var result = await _repositorio.GetByFilter(exp, null,
+                x => x.Include(y => y.PrestadorEstablecimiento.Establecimiento).
+                    Include(y => y.PrestadorEstablecimiento.Establecimiento.Localidad)
+                    .Include(y => y.PrestadorEstablecimiento.PrestadorEspecialidad.Especialidad)
+                    .Include(y => y.PrestadorEstablecimiento.PrestadorEspecialidad.Prestador)
+                    .Include(y => y.DiaHorarios)
+                    .ThenInclude(y => y.Dia), false);
             return _mapper.Map<IEnumerable<HorarioPrestadorDto>>(result);
         }
     }

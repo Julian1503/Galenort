@@ -13,13 +13,13 @@ namespace Galenort.Infraestructura.Repo
 {
     public class Repositorio<T> : IRepositorio<T> where T : EntityBase
     {
-        public async Task Create(T entity)
+        public async Task<long> Create(T entity)
         {
             using (var context = new DataContext())
             {
                 await context.Set<T>().AddAsync(entity);
                 await context.SaveChangesAsync();
-
+                return entity.Id;
             }
         }
         public async Task Update(T entity)

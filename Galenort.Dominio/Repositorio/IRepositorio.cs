@@ -11,7 +11,7 @@ namespace Galenort.Dominio.Repositorio
 {
     public interface IRepositorio<T>
     {
-        Task Create(T entity);
+        Task<long> Create(T entity);
 
         Task Update(T entity);
 

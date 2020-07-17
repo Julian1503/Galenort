@@ -43,11 +43,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galenort.Constantes", "Gale
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galenort.Mapper", "Galenort.Mapper\Galenort.Mapper.csproj", "{2FC922BC-3B62-4681-8431-BC7A5D4044DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galenort.IoC", "Galenort.IoC\Galenort.IoC.csproj", "{7A1F4BB5-DDD7-4B7B-BBF1-EA6CF429AF2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galenort.IoC", "Galenort.IoC\Galenort.IoC.csproj", "{7A1F4BB5-DDD7-4B7B-BBF1-EA6CF429AF2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galenor.API", "Galenor.API\Galenor.API.csproj", "{0FB3D2DE-5DE2-424E-B24F-D7B18E1ED0AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galenor.API", "Galenor.API\Galenor.API.csproj", "{0FB3D2DE-5DE2-424E-B24F-D7B18E1ED0AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galenort.Presentacion", "Galenort.Presentacion\Galenort.Presentacion.csproj", "{85B9993F-5556-4A93-8B89-8DB0159F3836}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galenort.Presentacion", "Galenort.Presentacion\Galenort.Presentacion.csproj", "{85B9993F-5556-4A93-8B89-8DB0159F3836}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

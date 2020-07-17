@@ -9,5 +9,9 @@ namespace Galenot.Interces.Especialidad
     public interface IEspecialidadServicio
     {
         Task<IEnumerable<EspecialidadDto>> ObtenerTodos();
+        Task<EspecialidadDto> GetById(long id);
+        Task Create(EspecialidadDto especialidad);
+        Task Delete(long id);
+        Task Update(EspecialidadDto especialidad,long id);
     }
 }

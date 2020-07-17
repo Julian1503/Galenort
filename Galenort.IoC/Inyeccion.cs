@@ -5,12 +5,16 @@ using Galenort.Implementacion.Especialidad;
 using Galenort.Implementacion.Establecimiento;
 using Galenort.Implementacion.HorarioPrestador;
 using Galenort.Implementacion.Prestador;
+using Galenort.Implementacion.PrestadorEspecialidad;
+using Galenort.Implementacion.PrestadorEstablecimiento;
 using Galenort.Infraestructura;
 using Galenort.Infraestructura.Repo;
 using Galenot.Interces.Especialidad;
 using Galenot.Interces.Establecimiento;
 using Galenot.Interces.HorarioPrestador;
 using Galenot.Interces.Prestador;
+using Galenot.Interces.PrestadorEspecialidad;
+using Galenot.Interces.PrestadorEstablecimiento;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Galenort.IoC
@@ -32,6 +36,12 @@ namespace Galenort.IoC
 
             service.AddTransient<IPrestadorServicio, PrestadorServicio>();
             service.AddTransient<IRepositorio<Prestador>, Repositorio<Prestador>>();
+
+            service.AddTransient<IPrestadorEspecialidadServicio, PrestadorEspecialidadServicio>();
+            service.AddTransient<IRepositorio<PrestadorEspecialidad>, Repositorio<PrestadorEspecialidad>>();
+
+            service.AddTransient<IPrestadorEstablecimientoServicio, PrestadorEstablecimientoServicio>();
+            service.AddTransient<IRepositorio<PrestadorEstablecimiento>, Repositorio<PrestadorEstablecimiento>>();
         }
     }
 }

@@ -10,5 +10,6 @@ namespace Galenot.Interces.HorarioPrestador
     {
        Task<IEnumerable<HorarioPrestadorDto>> ObtenerTodos();
        Task<IEnumerable<HorarioPrestadorDto>> ObtenerPorFiltro(long profesionalId, long establecimientoId, long especialidadId);
+        //Task<long> Create(long idprestador, long idestablecimiento, long idespecialidad);
     }
 }

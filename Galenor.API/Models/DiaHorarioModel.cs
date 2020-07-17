@@ -9,6 +9,5 @@ namespace Galenor.API.Models
     {
         public long IdDia { get; set; }
         public long IdHorario { get; set; }
-
     }
 }

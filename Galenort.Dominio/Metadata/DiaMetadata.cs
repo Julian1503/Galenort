@@ -27,38 +27,33 @@ namespace Galenort.Dominio.Metadata
                new Dia
                {
                    Id=1,
-                   Descripcion = "Lunes"
+                   Descripcion = "LUNES"
                },
                new Dia
                {
                    Id=2,
-                   Descripcion = "Martes"
+                   Descripcion = "MARTES"
                },
                new Dia
                {
                    Id=3,
-                   Descripcion = "Miercoles"
+                   Descripcion = "MIERCOLES"
                },
                new Dia
                {
                    Id=4,
-                   Descripcion = "Jueves"
+                   Descripcion = "JUEVES"
                },
                new Dia
                {
                    Id=5,
-                   Descripcion = "Viernes"
+                   Descripcion = "VIERNES"
                },
                new Dia
                {
                    Id=6,
-                   Descripcion = "Sabado"
-               },
-               new Dia
-               {
-                   Id=7,
-                   Descripcion = "Domingo"
-               },
+                   Descripcion = "LUNES A VIERNES"
+               }
            };
         }
     }

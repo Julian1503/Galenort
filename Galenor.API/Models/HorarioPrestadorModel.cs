@@ -7,7 +7,8 @@ namespace Galenor.API.Models
 {
     public class HorarioPrestadorModel
     {
-        public long IdPrestador { get; set; }
-        public long IdHorario { get; set; }
+        public long IdPrestadorEstablecimiento { get; set; }
+        public TimeSpan HoraInicio { get; set; }
+        public TimeSpan HoraFin { get; set; }
     }
 }

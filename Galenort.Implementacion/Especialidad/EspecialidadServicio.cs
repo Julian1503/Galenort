@@ -23,14 +23,35 @@ namespace Galenort.Implementacion.Especialidad
             _mapper = config.CreateMapper();
         }
 
-        /// <summary>
-        /// Metodo por el cual se obtienen todas las Especialidades cargadas en la base de datos.
-        /// </summary>
-        /// <returns>Una lista de EspecialidadDto</returns>
         public async Task<IEnumerable<EspecialidadDto>> ObtenerTodos()
         {
             var result = await _repositorio.GetAll(x => x.OrderBy(y => y.Descripcion), null, false);
             return _mapper.Map<IEnumerable<EspecialidadDto>>(result);
         }
+
+        public async Task<EspecialidadDto> GetById(long id)
+        {
+            var especialidad = await _repositorio.GetById(id, null, false);
+            return _mapper.Map<EspecialidadDto>(especialidad);
+        }
+
+        public async Task Create(EspecialidadDto especialidad)
+        {
+            var _especialidad = _mapper.Map<Dominio.Entidades.Especialidad>(especialidad);
+            await _repositorio.Create(_especialidad);
+        }
+
+        public async Task Update(EspecialidadDto especialidad,long id)
+        {
+            var _especialidad = _mapper.Map<Dominio.Entidades.Especialidad>(especialidad);
+            _especialidad.Id = id;
+            await _repositorio.Update(_especialidad);
+        }
+        public async Task Delete(long id)
+        {
+            var _especialidad = await _repositorio.GetById(id, null, false);
+            await _repositorio.Delete(_especialidad);
+        }
+
     }
 }

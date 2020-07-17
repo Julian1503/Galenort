@@ -6,10 +6,12 @@ namespace Galenort.Dominio.Entidades
 {
     public class HorarioPrestador : EntityBase
     {
-        public long IdPrestador { get; set; }
-        public long IdHorario { get; set; }
+        public long IdPrestadorEstablecimiento { get; set; }
+        public TimeSpan HoraInicio { get; set; }
+        public TimeSpan HoraFin { get; set; }
 
-        public virtual Prestador Prestador { get; set; }
-        public virtual Horario Horario { get; set; }
+        public virtual PrestadorEstablecimiento PrestadorEstablecimiento { get; set; }
+        public virtual IEnumerable<DiaHorario> DiaHorarios { get; set; }
+
     }
 }

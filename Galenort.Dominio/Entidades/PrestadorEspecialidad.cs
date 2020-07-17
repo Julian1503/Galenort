@@ -9,7 +9,8 @@ namespace Galenort.Dominio.Entidades
         public long IdPrestador { get; set; }
         public long IdEspecialidad { get; set; }
 
-        public virtual Prestador Prestador { get; set; }
+        public virtual IEnumerable<PrestadorEstablecimiento> PrestadorEstablecimientos { get; set; }
         public virtual Especialidad Especialidad { get; set; }
+        public virtual Prestador Prestador { get; set; }
     }
 }

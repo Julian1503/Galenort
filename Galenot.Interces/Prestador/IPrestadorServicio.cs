@@ -9,5 +9,9 @@ namespace Galenot.Interces.Prestador
     public interface IPrestadorServicio
     {
         Task<IEnumerable<PrestadorDto>> ObtenerTodos();
+        Task<PrestadorDto> GetById(long id);
+        Task<long> Create(PrestadorDto prestador);
+        Task Delete(long id);
+        Task Update(PrestadorDto prestador,long id);
     }
 }

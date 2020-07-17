@@ -39,7 +39,7 @@ namespace Galenor.API.Controllers
                 return BadRequest(ModelState);
             }
 
-            var result = await _horarioPrestadorServicio.ObtenerPorFiltro(idprestador, idespecialidad, idprestador);
+            var result = await _horarioPrestadorServicio.ObtenerPorFiltro(idprestador, idestablecimiento, idespecialidad);
 
             if (result == null)
             {
@@ -63,6 +63,24 @@ namespace Galenor.API.Controllers
             }
 
             var result = await _horarioPrestadorServicio.ObtenerTodos();
+
+            if (result == null)
+            {
+                return NotFound();
+            }
+            return Ok(result);
+        }
+
+        [HttpPost]
+        [Route("Crear/{idprestador:long}/{idestablecimiento:long}/{idespecialidad:long}")]
+        public async Task<IActionResult> Create(long idprestador, long idestablecimiento, long idespecialidad)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var result = await _horarioPrestadorServicio.Create(idprestador, idestablecimiento, idespecialidad);
 
             if (result == null)
             {

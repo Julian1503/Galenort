@@ -7,7 +7,7 @@ namespace Galenor.API.Models
 {
     public class PrestadorEstablecimientoModel
     {
-        public long IdPrestador { get; set; }
+        public long IdPrestadorEspecialidad { get; set; }
         public long IdEstablecimiento { get; set; }
     }
 }
