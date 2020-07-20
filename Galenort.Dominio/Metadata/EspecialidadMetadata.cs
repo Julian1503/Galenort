@@ -95,7 +95,17 @@ namespace Galenort.Dominio.Metadata
                 {
                     Id=14,
                     Descripcion = "PSICOLOGIA"
-                }
+                },
+                new Especialidad
+                {
+                    Id=15,
+                    Descripcion = "GASTROENTEROLOGIA"
+                },
+                new Especialidad
+                {
+                    Id=16,
+                    Descripcion = "CIRUGIA VASCULAR"
+                },
             };
         }
     }

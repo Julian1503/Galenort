@@ -171,6 +171,84 @@ namespace Galenort.Dominio.Metadata
                     IdEspecialidad = 14,
                     IdPrestador = 24
                 },
+                new PrestadorEspecialidad
+                {
+                    Id = 25,
+                    IdEspecialidad = 9,
+                    IdPrestador = 25
+                },
+                new PrestadorEspecialidad
+                {
+                    Id = 26,
+                    IdEspecialidad = 9,
+                    IdPrestador = 26
+                },
+                new PrestadorEspecialidad
+                {
+                    Id = 27,
+                    IdEspecialidad = 7,
+                    IdPrestador = 27
+                },
+                new PrestadorEspecialidad
+                {
+                    Id = 28,
+                    IdEspecialidad = 7,
+                    IdPrestador = 28
+                },
+                new PrestadorEspecialidad
+                {
+                    Id = 29,
+                    IdEspecialidad = 7,
+                    IdPrestador = 29
+                },
+                new PrestadorEspecialidad
+                {
+                    Id = 30,
+                    IdEspecialidad = 15,
+                    IdPrestador = 30
+                },
+                new PrestadorEspecialidad
+                {
+                    Id = 31,
+                    IdEspecialidad = 13,
+                    IdPrestador = 31
+                },
+                new PrestadorEspecialidad
+                {
+                    Id = 32,
+                    IdEspecialidad = 13,
+                    IdPrestador = 32
+                },
+                new PrestadorEspecialidad
+                {
+                    Id = 33,
+                    IdEspecialidad = 16,
+                    IdPrestador = 33
+                },
+                new PrestadorEspecialidad
+                {
+                    Id = 34,
+                    IdEspecialidad = 4,
+                    IdPrestador = 34
+                },
+                new PrestadorEspecialidad
+                {
+                    Id = 35,
+                    IdEspecialidad = 11,
+                    IdPrestador = 35
+                },
+                new PrestadorEspecialidad
+                {
+                    Id = 36,
+                    IdEspecialidad = 9,
+                    IdPrestador = 36
+                },
+                new PrestadorEspecialidad
+                {
+                    Id = 37,
+                    IdEspecialidad = 5,
+                    IdPrestador = 37
+                },
             };
         }
     }

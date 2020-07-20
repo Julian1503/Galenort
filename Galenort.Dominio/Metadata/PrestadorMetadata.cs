@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Galenort.Dominio.Entidades;
+﻿using Galenort.Dominio.Entidades;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Org.BouncyCastle.Crypto.Engines;
+using System.Collections.Generic;
 
 namespace Galenort.Dominio.Metadata
 {
@@ -32,156 +29,234 @@ namespace Galenort.Dominio.Metadata
                 new Prestador
                 {
                     Id = 1,
-                    Apellido = "AGÜERO AVILA",
-                    Nombre = "MARCELO"
+                    Apellido = "Agüero Avila",
+                    Nombre = "Marcelo"
                 },
                 new Prestador
                 {
                     Id = 2,
-                    Apellido = "ESCODAMAGLIA",
-                    Nombre = "SERGIO"
+                    Apellido = "Escodamaglia",
+                    Nombre = "Sergio"
                 },
                 new Prestador
                 {
                     Id = 3,
-                    Apellido = "CHAVEZ",
-                    Nombre = "NILDA"
+                    Apellido = "Chavez",
+                    Nombre = "Nilda"
                 },
                 new Prestador
                 {
                     Id = 4,
-                    Apellido = "CABRAL",
-                    Nombre = "CLELIA"
+                    Apellido = "Cabral",
+                    Nombre = "Clelia"
                 },
                 new Prestador
                 {
                     Id = 5,
-                    Apellido = "BENAGLIO",
-                    Nombre = "HORACIO"
+                    Apellido = "Benaglio",
+                    Nombre = "Horacio"
                 },
                 new Prestador
                 {
                     Id = 6,
-                    Apellido = "GIMENEZ",
-                    Nombre = "NAZARENO"
+                    Apellido = "Gimenez",
+                    Nombre = "Nazareno"
                 }, new Prestador
                 {
                     Id = 7,
-                    Apellido = "VENTURINI",
-                    Nombre = "ARTURO"
+                    Apellido = "Venturini",
+                    Nombre = "Arturo"
                 }, new Prestador
                 {
                     Id = 8,
-                    Apellido = "BAZA",
-                    Nombre = "DAVID"
+                    Apellido = "Baza",
+                    Nombre = "David"
                 }, new Prestador
                 {
                     Id = 9,
-                    Apellido = "FRAU",
-                    Nombre = "DANIEL"
+                    Apellido = "Frau",
+                    Nombre = "Daniel"
                 },
                 new Prestador
                 {
                     Id = 10,
-                    Apellido = "ARGAÑARAZ",
-                    Nombre = "CARMEN"
+                    Apellido = "Argañaraz",
+                    Nombre = "Carmen"
                 },
 
                 new Prestador
                 {
                     Id = 11,
-                    Apellido = "VALDE LICO",
-                    Nombre = "GUILLERMO"
+                    Apellido = "Valde lico",
+                    Nombre = "Guillermo"
                 },
 
                 new Prestador
                 {
                     Id = 12,
-                    Apellido = "FERNANDEZ",
-                    Nombre = "SILVIO"
+                    Apellido = "Fernandez",
+                    Nombre = "Silvio"
                 },
 
                 new Prestador
                 {
                     Id = 13,
-                    Apellido = "QUIROGA",
-                    Nombre = "ADRIAN"
+                    Apellido = "Quiroga",
+                    Nombre = "Adrian"
                 },
 
                 new Prestador
                 {
                     Id = 14,
-                    Apellido = "JUAREZ",
-                    Nombre = "PABLO"
+                    Apellido = "Juarez",
+                    Nombre = "Pablo"
                 },
 
                 new Prestador
                 {
                     Id = 15,
-                    Apellido = "FIGUEROA",
-                    Nombre = "RICARDO"
+                    Apellido = "Figueroa",
+                    Nombre = "Ricardo"
                 },
 
                 new Prestador
                 {
                     Id = 16,
-                    Apellido = "LAZARTE",
-                    Nombre = "JORGE"
+                    Apellido = "Lazarte",
+                    Nombre = "Jorge"
                 },
 
                 new Prestador
                 {
                     Id = 17,
-                    Apellido = "GEREZ",
-                    Nombre = "LILIANA"
+                    Apellido = "Gerez",
+                    Nombre = "Liliana"
                 },
 
                 new Prestador
                 {
                     Id = 18,
-                    Apellido = "NEME",
-                    Nombre = "GRACIELA"
+                    Apellido = "Neme",
+                    Nombre = "Graciela"
                 },
 
                 new Prestador
                 {
                     Id = 19,
-                    Apellido = "TOBIAS TERUEL",
-                    Nombre = "OSCAR"
+                    Apellido = "Tobias Teruel",
+                    Nombre = "Oscar"
                 },
 
                 new Prestador
                 {
                     Id = 20,
-                    Apellido = "LOPEZ",
-                    Nombre = "LORENA"
+                    Apellido = "Lopez",
+                    Nombre = "Lorena"
                 },
 
                 new Prestador
                 {
                     Id = 21,
-                    Apellido = "PERPIGNAL",
-                    Nombre = "LUISA"
+                    Apellido = "Perpignal",
+                    Nombre = "Luisa"
                 },
 
                 new Prestador
                 {
                     Id = 22,
-                    Apellido = "SILVA",
-                    Nombre = "ENZO"
+                    Apellido = "Silva",
+                    Nombre = "Enzo"
                 },
 
                 new Prestador
                 {
                     Id = 23,
-                    Apellido = "MENA",
-                    Nombre = "VICENTE"
+                    Apellido = "Mena",
+                    Nombre = "Vicente"
                 },
                 new Prestador
                 {
                     Id = 24,
-                    Apellido = "CANSECO",
-                    Nombre = "RICARDO"
+                    Apellido = "Canseco",
+                    Nombre = "Ricardo"
+                }
+                ,
+                new Prestador
+                {
+                    Id = 25,
+                    Apellido = "Gómez",
+                    Nombre = "Sergio"
+                },
+                new Prestador
+                {
+                    Id = 26,
+                    Apellido = "Mena",
+                    Nombre = "Hernán"
+                },
+                new Prestador
+                {
+                    Id = 27,
+                    Apellido = "Ramos",
+                    Nombre = "Hernández"
+                },
+                new Prestador
+                {
+                    Id = 28,
+                    Apellido = "Robles",
+                    Nombre = "Chavez"
+                },
+                new Prestador
+                {
+                    Id = 29,
+                    Apellido = "Nieto",
+                    Nombre = "Silva"
+                },
+                new Prestador
+                {
+                    Id = 30,
+                    Apellido = "Brodesen",
+                    Nombre = "Liliana"
+                },
+                new Prestador
+                {
+                    Id = 31,
+                    Apellido = "Jaime",
+                    Nombre = "Sebastian"
+                },
+                new Prestador
+                {
+                    Id = 32,
+                    Apellido = "Fernandez",
+                    Nombre = "Gómez"
+                },
+                new Prestador
+                {
+                    Id = 33,
+                    Apellido = "Erbetta",
+                    Nombre = "Ruben"
+                },
+                new Prestador
+                {
+                    Id = 34,
+                    Apellido = "Andgel",
+                    Nombre = ""
+                },
+                new Prestador
+                {
+                    Id = 35,
+                    Apellido = "Saracho",
+                    Nombre = ""
+                }, new Prestador
+                {
+                    Id = 36,
+                    Apellido = "Raskosky",
+                    Nombre = ""
+                },
+                new Prestador
+                {
+                    Id = 37,
+                    Apellido = "Azcarate",
+                    Nombre = ""
                 },
             };
         }
