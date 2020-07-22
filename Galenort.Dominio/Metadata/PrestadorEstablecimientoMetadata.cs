@@ -364,6 +364,12 @@ namespace Galenort.Dominio.Metadata
                 },
                 new PrestadorEstablecimiento
                 {
+                    Id = 57,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 57
+                },
+                new PrestadorEstablecimiento
+                {
                     Id = 58,
                     IdEstablecimiento = 1,
                     IdPrestadorEspecialidad = 58
