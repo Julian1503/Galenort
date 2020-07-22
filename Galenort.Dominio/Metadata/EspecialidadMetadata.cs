@@ -79,8 +79,7 @@ namespace Galenort.Dominio.Metadata
                 {
                     Id=11,
                     Descripcion = "CARDIOLOGIA"
-                }
-                ,
+                },
                 new Especialidad
                 {
                     Id=12,
@@ -104,7 +103,17 @@ namespace Galenort.Dominio.Metadata
                 new Especialidad
                 {
                     Id=16,
-                    Descripcion = "CIRUGIA VASCULAR"
+                    Descripcion = "CIRUGIA CARDIOVASCULAR"
+                },
+                new Especialidad
+                {
+                    Id=17,
+                    Descripcion = "PEDIATRIA"
+                },
+                new Especialidad
+                {
+                    Id=18,
+                    Descripcion = "ODONTOLOGIA"
                 },
             };
         }

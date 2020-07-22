@@ -248,7 +248,168 @@ namespace Galenort.Dominio.Metadata
                     IdEstablecimiento = 2,
                     IdPrestadorEspecialidad = 37
                 },
-
+                new PrestadorEstablecimiento
+                {
+                    Id = 38,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 38
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 39,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 39
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 40,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 40
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 41,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 41
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 42,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 42
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 43,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 43
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 44,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 44
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 45,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 45
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 46,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 46
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 47,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 47
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 48,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 48
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 49,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 49
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 50,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 50
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 51,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 51
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 52,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 52
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id =53 ,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 53
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 54,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 54
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 55,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 55
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 56,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 57
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 58,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 58
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 59,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 59
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 60,
+                    IdEstablecimiento = 1,
+                    IdPrestadorEspecialidad = 60
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 61,
+                    IdEstablecimiento = 4,
+                    IdPrestadorEspecialidad = 61
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 62,
+                    IdEstablecimiento = 4,
+                    IdPrestadorEspecialidad = 62
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 63,
+                    IdEstablecimiento = 4,
+                    IdPrestadorEspecialidad = 63
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 64,
+                    IdEstablecimiento = 4,
+                    IdPrestadorEspecialidad = 64
+                },
+                new PrestadorEstablecimiento
+                {
+                    Id = 65,
+                    IdEstablecimiento = 4,
+                    IdPrestadorEspecialidad = 65
+                }
             };
         }
     }

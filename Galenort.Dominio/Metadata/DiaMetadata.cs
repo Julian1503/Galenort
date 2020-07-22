@@ -53,7 +53,17 @@ namespace Galenort.Dominio.Metadata
                {
                    Id=6,
                    Descripcion = "LUNES A VIERNES"
-               }
+               },
+               new Dia
+               {
+                   Id=7,
+                   Descripcion = "SABADO"
+               },
+               new Dia
+               {
+                   Id = 8,
+                   Descripcion = "Sujeto a acuerdo previo con el especialista"
+               },
            };
         }
     }
