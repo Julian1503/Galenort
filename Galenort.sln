@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infraestructura", "5 - Infraestructura", "{8DC3AD19-D74D-4D45-9524-6D9273DB1A61}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galenort.Infraestructura", "Galenort.Infraestructura\Galenort.Infraestructura.csproj", "{99DBA8A0-5CF3-45DC-9C8F-743B798CFF9C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A3CF7639-82A6-42DC-BA9E-31E9318C0476} = {A3CF7639-82A6-42DC-BA9E-31E9318C0476}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentacion", "1 - Presentacion", "{5C66B3E4-0CAF-4488-BE8F-12867AA564C1}"
 EndProject

@@ -19,8 +19,19 @@ namespace GalenortWebApp.Controllers
 
             return View();
         }
+        public ActionResult CentroAtencion()
+        {
+            ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
         public ActionResult Contact()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult Planes()
         {
             ViewBag.Message = "Your contact page.";
 
