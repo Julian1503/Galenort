@@ -17,12 +17,13 @@
             <div class="navbar-collapse collapse" id="navbarSupportedContent">
 
                 <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item">@Html.ActionLink("¿Quiénes Somos?", "About", "Home", null, new { @class = "nav-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("Contactanos", "Contact", "Home", null, new { @class = "nav-link" })</li>
-                    <li class="nav-item">@Html.ActionLink("Planes", "Planes", "Home", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("¿Quiénes Somos?", "Index", "Home", null, new { @class = "nav-link" })</li>
                     <li class="nav-item">@Html.ActionLink("Centro de Atención", "CentroAtencion", "Home", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Planes", "Planes", "Home", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Afiliados", "Afiliado", "Home", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Contactanos", "Contact", "Home", null, new { @class = "nav-link" })</li>
                 </ul>
-           
+
             </div>
         </div>
     </nav>
@@ -30,19 +31,80 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <div class="jumbotron">
-                <h3>Galenort</h3>
-                <p class="lead">numero</p>
-                <h4>Establecimientos</h4>
-                <p>datos je</p>
-            </div>
-            <p>&copy; @DateTime.Now.Year Galenort - All Rights Reserved </p>
-        </footer>
-    </div>
+        <!-- Footer -->
+        <footer class="page-footer font-small blue pt-4">
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+            <div class="container-fluid text-center text-md-left">
+
+                <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <h5 class="text-uppercase">Galenort</h5>
+                        <p>0381-4219000 o 0381-4304101</p>
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                        <h5 class="text-uppercase">Establecimientos</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>Sanatorio Galeno</p>
+                            </li>
+                            <li>
+                                <p>Sanatorio C.I.M.S.A</p>
+
+                            </li>
+                            <li>
+                                <p>Sanatorio Central</p>
+
+                            </li>
+                            <li>
+                                <p>Sanatorio Mitre</p>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+                        <h5 class="text-uppercase">Dirección</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <p> Av. Belgrano 2970 - 381 4331949</p>
+                            </li>
+                            <li>
+                                <p> Jujuy 111 - 381 4220662 </p>
+                            </li>
+                            <li>
+                                <p> Av. Mitre 268 - 381 4227971 </p>
+                            </li>
+                            <li>
+                                <p> Av. Mitre 273 - 3865 481338 </p>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-copyright text-center py-3">
+                <p>&copy; @DateTime.Now.Year Galenort - All Rights Reserved </p>
+            </div>
+    
+        </footer>
+
+
+
+
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
 </body>
 </html>
